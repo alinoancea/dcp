@@ -11,21 +11,21 @@ Can you do this in one pass?
 
 ## Problem 2 (Uber)
 ```
-Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+Given an array of integers, return a new array such that each element at index i of the new array is the
+product of all the numbers in the original array except the one at i.
 
-For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
+For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our
+input was [3, 2, 1], the expected output would be [2, 3, 6].
 
 What if you can't use division?
 ```
 
 ## Problem 3 (Google)
 ```
-This problem was asked by **Google**.
+Given the root to a binary tree, implement serialize(root), which serializes the tree into a string, and 
+deserialize(s), which deserializes the string back into the tree.
 
-Given the root to a *binary tree*, implement serialize(root), which serializes the tree *into a string*, and 
-deserialize(s), which deserializes the string *back into the tree*.
-
-For example, given the following *Node* class
+For example, given the following Node class
 
 class Node:
     def __init__(self, val, left=None, right=None):
@@ -37,4 +37,15 @@ The following test should pass:
 
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
+```
+
+## Problem 4 (Stripe)
+```
+Given an array of integers, find the first missing *positive integer* in linear time and constant space.
+In other words, find the lowest positive integer that does not exist in the array. The array can contain
+duplicates and negative numbers as well.
+
+For example, the input [3, 4, -1, 1] should give 2. The input [1, 2, 0] should give 3.
+
+You can modify the input array in-place.
 ```
