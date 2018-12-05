@@ -75,3 +75,28 @@ which returns the node at index.
 If using a language that has no pointers (such as Python), you can assume you have access to get_pointer
 and dereference_pointer functions that converts between nodes and memory addresses.
 ```
+
+## Problem 7 (Facebook)
+```
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
+
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
+
+You can assume that the messages are decodable. For example, '001' is not allowed.
+```
+
+## Problem 8 (Google)
+```
+A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
+
+Given the root to a binary tree, count the number of unival subtrees.
+
+For example, the following tree has 5 unival subtrees:
+   0
+  / \
+ 1   0
+    / \
+   1   0
+  / \
+ 1   1
+```
